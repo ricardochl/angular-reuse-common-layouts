@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1 1 100%;
+}
+
+.main{
+  display: flex;
+  flex-grow: 2;
+}
+.content {
+  background: #41FAF4;
+  width: 100%;
+}
