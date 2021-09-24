@@ -4,13 +4,7 @@ import { FullLayoutComponent } from '../layout/full-layout/full-layout.component
 import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
-  {
-    path: 'dashboard',
-    component: FullLayoutComponent,
-    children: [
-      { path: '', component: DashboardComponent }
-    ]
-  }
+  { path: '', component: DashboardComponent }
 ];
 
 @NgModule({

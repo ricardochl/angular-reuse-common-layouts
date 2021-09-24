@@ -4,13 +4,7 @@ import { SimpleLayoutComponent } from '../layout/simple-layout/simple-layout.com
 import { LoginComponent } from './login.component';
 
 const routes: Routes = [
-  {
-    path: 'login',
-    component: SimpleLayoutComponent,
-    children: [
-      { path: '', component: LoginComponent },
-    ]
-  }
+  { path: '', component: LoginComponent },
 ];
 
 @NgModule({
