@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 @NgModule({

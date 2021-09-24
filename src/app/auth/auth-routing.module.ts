@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SimpleLayoutComponent } from '../layout/simple-layout/simple-layout.component';
+import { Layouts } from '../layout/layouts';
 import { LoginComponent } from './login.component';
 
 const routes: Routes = [
   {
     path: 'login',
-    component: SimpleLayoutComponent,
-    children: [
-      { path: '', component: LoginComponent },
-    ]
-  }
+    data: { layout: Layouts.Simple },
+    children: [{ path: '', component: LoginComponent }],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AuthRoutingModule { }
+export class AuthRoutingModule {}

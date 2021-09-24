@@ -19,7 +19,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild([]),
+    RouterModule
   ],
   exports:[
     FullLayoutComponent,

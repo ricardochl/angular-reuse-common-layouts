@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<ng-container [ngSwitch]="layout">
+  <!-- Alternativerly use the main layout as the default switch case -->
+  <app-full-layout *ngSwitchCase="Layouts.Full"></app-full-layout>
+  <app-full-layout *ngSwitchDefault></app-full-layout >
+  <app-simple-layout
+    *ngSwitchCase="Layouts.Simple"
+  ></app-simple-layout >
+</ng-container>

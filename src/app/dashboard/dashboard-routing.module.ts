@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FullLayoutComponent } from '../layout/full-layout/full-layout.component';
+import { Layouts } from '../layout/layouts';
 import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
   {
     path: 'dashboard',
-    component: FullLayoutComponent,
+    data: { layout: Layouts.Full },
     children: [
-      { path: '', component: DashboardComponent }
+      { path: '', component: DashboardComponent, },
     ]
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class DashboardRoutingModule { }
+export class DashboardRoutingModule {}
